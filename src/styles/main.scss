@@ -24,9 +24,8 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   max-width: ($cell-size+$cell-gap) * 7;
-  margin-top: 100px;
+  margin: 100px auto;
 
   @for $i from 1 through 31 {
     div:nth-child(#{$i})::after {
