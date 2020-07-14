@@ -24,6 +24,7 @@ body {
 .calendar {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   max-width: ($cell-size+$cell-gap) * 7;
   margin-top: 100px;
 
@@ -58,7 +59,7 @@ body {
 
 @each $day, $i in $days {
   .calendar-#{$day} :first-child {
-    margin-left: ($cell-size + $cell-gap +1) * $i;
+    margin-left: (($cell-size + $cell-gap) * $i) + 1;
   }
 }
 
